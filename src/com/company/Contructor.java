@@ -16,14 +16,14 @@ public class Contructor {
 
     //Intialization contructor
 
-    public Contructor(int id, String name) {
+    public Contructor(int id1, String name) {
         this.id = id;
         this.name = name;
     }
 
     //constructor to initialize another object
 
-    public Contructor(Contructor c){
+    public Contructor(Contructor c){ //Copy Contructor
         id = c.id;
         name = c.name;
     }
@@ -34,7 +34,7 @@ public class Contructor {
 
     public static void main(String[] args) {
         Contructor contructor = new Contructor(4,"Ashish");
-        Contructor contructor1 = new Contructor(5,"Ashish Nawaaba");
+        Contructor contructor1 = new Contructor(5,"Ashish");
 
         Contructor contructor2 = new Contructor(contructor1);
         contructor.display();
